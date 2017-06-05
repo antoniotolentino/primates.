@@ -1,0 +1,84 @@
+<HTML>
+<HEAD> <TITLE> PAGINA WEB </TITLE> </HEAD>
+
+<body background="63985e828f141e02056f80b763c135c0.gif">
+
+<CENTER>
+<marquee><FONT SIZE=14+FACE="ARIAL" COLOR=YELLOW> <B> CARACTERISTICAS Y RASGOS DE LOS PRIMATES </B> </FONT></marquee> 
+<BR>
+</CENTER>
+
+<BR>
+<BR>
+
+<P> Los seres humanos somos, desde el punto de vista de la clasificación biológica, Primates, un orden de mamíferos que conocemos más familiarmente con el nombre de monos.
+Sin duda somos unos primates especiales, que nos distinguimos de los demás por una serie de rasgos únicos.
+Los primates son un tipo de mamíferoadaptado a la vid en el bosque tropical. En la actualidad, se conocen cerca de 175 especies distribuidas por América, Asia y África.
+</P>
+
+<BR>
+<marquee direction="right"><FONT FACE="ARIAL" SIZE=10 COLOR=BLUE>Rasgos</FONT></marquee>
+<OL TYPE=A>
+<LI> Los primates tienen cinco dedos (pentadactilia), un patrón dental común, y un primitivo diseño corporal. </LI>
+<LI> Dedos de la mano con capacidad de una gran flexión. -Manos y pies con cinco dedos (o pentadáctilos). </LI>
+<LI> Pies plantígrados(apoyo de toda la planta). </LI>
+<LI> Uñas planas en lugar de garras </LI>
+
+<BR>
+<marquee><FONT FACE="ARIAL" SIZE=10 COLOR=BLUE>Caracteristicas</FONT></marquee>
+<UL TYPE=scuare>
+<LI> Visión.Los primates tienen vision binocular (en diferentes grados) y a color.
+Posición erguida. Los primates sufren un desarrollo progresivo de la verticalidad del tronco por lo que su posición es erguida. </LI>
+<LI> Cuidado de la prole.La familia de los primates suele ser monógama y el cuidado de la prole es muyintenso por parte de las hembras y también de los machos. Más información en:los primates
+</LI>
+</OL>
+
+<BR>
+<CENTER><IMG WIDTH=320 HEIGHT=200 SRC="F:\DISEÑO\mono-imagen-animada-0241.gif"></CENTER>
+<embed src=AlanWalkerFaded.mp3 autoestart=true loop=true width=0 heigth=0>
+
+<BR>
+<a href="PRODUCTOS 4.HTML">pagina4</a>
+
+
+
+ <script type="text/javascript">
+//setInterval
+var cronometro;
+function detenerse()
+{
+clearInterval(cronometro);
+}
+function carga()
+{
+contador_s =0;
+contador_m =0;
+s = document.getElementById("segundos");
+m = document.getElementById("minutos");
+cronometro = setInterval(
+function(){
+if(contador_s==60)
+{
+contador_s=0;
+contador_m++;
+m.innerHTML = contador_m;
+if(contador_m==60)
+{
+contador_m=0;
+}
+}
+s.innerHTML = contador_s;
+contador_s++;
+}
+,1000);
+}
+</script>
+</head>
+<body onload="carga()">
+<p>
+<span id="minutos">0</span>:<span id="segundos">0</span>
+</p>
+<input type="button" onclick="detenerse()" value="detenerse"/>
+
+</BODY>
+</HTML>

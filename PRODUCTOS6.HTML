@@ -1,0 +1,63 @@
+<HTML>
+<HEAD> <TITLE> PAGINA WEB </TITLE> </HEAD>
+<body background="original.gif">
+
+<CENTER>
+<FONT SIZE=14+FACE="ARIAL" COLOR=YELLOW> <B> HABITAD DE LOS PRIMATES </B> </FONT>
+<BR>
+</CENTER>
+
+<BR>
+<P>La distribución de los monos cubre muchas regiones alrededor del mundo, tienden a vivir en regiones forestales con abundancia de arboles, aunque algunos de ellos viven en las sabanas, o en regiones de montaña. Existen especies de monos que sólo viven en los árboles, otros viven en tanto en los árboles como en la tierra.</P>
+<BR>
+<P>Los monos se mueven mucho alrededor de su área de distribución, viajan diariamente en busca de comida y no se quedan en un mismo nido por mucho tiempo. Usan sus agiles cuerpos para avanzar rápidamente en busca de alimento, al hacerlo propagan las semillas de plantas, flores y frutas. Esto le permite a su entorno y hábitat natural seguir rejuveneciendo.</P>
+<BR>
+<P>Los bosques de hoja perenne son el hogar de gran variedad de especies de monos, las regiones de bosques de manglares también pueden ser su hábitat. Los estudios muestran que el hábitat que estos animales se ha reducido en al menos un 30% en los últimos 25 años, es un ritmo alarmante, y significa que realmente no tienen a dónde ir. </p>
+
+<CENTER><IMG WIDTH=320 HEIGHT=200 SRC="F:\DISEÑO\giphy.gif"></CENTER>
+<CENTER><iframe width="640" height="360" src="https://www.youtube.com/embed/M9-L0W9OPU8" frameborder="0" allowfullscreen></iframe></CENTER>
+
+<a href="PRODUCTOS 7.HTML">pagina7</a>
+
+
+
+ <script type="text/javascript">
+//setInterval
+var cronometro;
+function detenerse()
+{
+clearInterval(cronometro);
+}
+function carga()
+{
+contador_s =0;
+contador_m =0;
+s = document.getElementById("segundos");
+m = document.getElementById("minutos");
+cronometro = setInterval(
+function(){
+if(contador_s==60)
+{
+contador_s=0;
+contador_m++;
+m.innerHTML = contador_m;
+if(contador_m==60)
+{
+contador_m=0;
+}
+}
+s.innerHTML = contador_s;
+contador_s++;
+}
+,1000);
+}
+</script>
+</head>
+<body onload="carga()">
+<p>
+<span id="minutos">0</span>:<span id="segundos">0</span>
+</p>
+<input type="button" onclick="detenerse()" value="detenerse"/>
+
+</BODY>
+</HTML>
